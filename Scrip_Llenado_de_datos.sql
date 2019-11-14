@@ -1,0 +1,251 @@
+INSERT INTO Centro(Nombre, Ubicacion) VALUES ('Centro de cuido cede central','San Jose')
+INSERT INTO Centro(Nombre, Ubicacion) VALUES ('Centro de cuido linda vista','Linda Vista, Alajuela')
+INSERT INTO Centro(Nombre, Ubicacion) VALUES ('Centro de cuido la Union','la Union,Cartago')
+INSERT INTO Centro(Nombre, Ubicacion) VALUES ('Centro de cuido Santa Cruz','Santa Cruz,Guanacaste')
+
+INSERT INTO Tipo_Empleado(Descripcion) VALUES ('Administrativo')
+INSERT INTO Tipo_Empleado(Descripcion) VALUES ('Cuidador')
+INSERT INTO Tipo_Empleado(Descripcion) VALUES ('Mantenimiento')
+
+INSERT INTO Puesto(Nombre_Puesto,Salario)VALUES ('Cuidador',1000000)
+INSERT INTO Puesto(Nombre_Puesto,Salario)VALUES ('Recursos Humanos',800000)
+INSERT INTO Puesto(Nombre_Puesto,Salario)VALUES ('Contabilidad',670000)
+INSERT INTO Puesto(Nombre_Puesto,Salario)VALUES ('Mantenimineto',540000)
+INSERT INTO Puesto(Nombre_Puesto,Salario)VALUES ('Centro de llamadas',450000)
+INSERT INTO Puesto(Nombre_Puesto,Salario)VALUES ('Asignacion de cuidadores',5200000)
+INSERT INTO Puesto(Nombre_Puesto,Salario)VALUES ('Jefes administrativos',1200000)
+INSERT INTO Puesto(Nombre_Puesto,Salario)VALUES ('Trabajo social',1600000)
+
+INSERT INTO Actividad(Nombre,Descripcion)VALUES ('Pago de salarios','Es la personas encargada de pagar los salarios')
+INSERT INTO Actividad(Nombre,Descripcion)VALUES ('Contratar personal','Se encarga de entrevistar las personas y contratarlas')
+INSERT INTO Actividad(Nombre,Descripcion)VALUES ('Capacitar personal','Se encarga de dar capacitaciones a los empleados')
+INSERT INTO Actividad(Nombre,Descripcion)VALUES ('Reparaciones','Se encargarn de administrar y reparar los activos de la empresa')
+INSERT INTO Actividad(Nombre,Descripcion)VALUES ('Cuidar adultos mayores','Se encarga de cuidar adultos mayores')
+INSERT INTO Actividad(Nombre,Descripcion)VALUES ('Cuidar menores de edad','Se encarga de cuidar niños menores de edad')
+INSERT INTO Actividad(Nombre,Descripcion)VALUES ('Cuidar personas enfermas','Se encarga de cuidar personas con alguna enfermedad')
+INSERT INTO Actividad(Nombre,Descripcion)VALUES ('Jefe de personal','Se encarga de asignar los empleados a sus puestos')
+INSERT INTO Actividad(Nombre,Descripcion)VALUES ('Analista de clientes','Se encarga de evaluar cada cliente para saber si es admitido')
+
+
+INSERT INTO ActividadxPuesto(FK_Actividad,FK_Puesto) VALUES(1,3)
+INSERT INTO ActividadxPuesto(FK_Actividad,FK_Puesto) VALUES(2,2)
+INSERT INTO ActividadxPuesto(FK_Actividad,FK_Puesto) VALUES(3,2)
+INSERT INTO ActividadxPuesto(FK_Actividad,FK_Puesto) VALUES(4,4)
+INSERT INTO ActividadxPuesto(FK_Actividad,FK_Puesto) VALUES(5,1)
+INSERT INTO ActividadxPuesto(FK_Actividad,FK_Puesto) VALUES(6,1)
+INSERT INTO ActividadxPuesto(FK_Actividad,FK_Puesto) VALUES(7,1)
+INSERT INTO ActividadxPuesto(FK_Actividad,FK_Puesto) VALUES(8,7)
+INSERT INTO ActividadxPuesto(FK_Actividad,FK_Puesto) VALUES(9,8)
+
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Lunes','06:00:00','14:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Lunes','14:00:00','22:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Lunes','22:00:00','06:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Lunes','8:00:00','16:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Martes','06:00:00','14:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Martes','14:00:00','22:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Martes','22:00:00','06:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Martes','8:00:00','16:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Miercoles','06:00:00','14:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Miercoles','14:00:00','22:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Miercoles','22:00:00','06:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Miercoles','8:00:00','16:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Jueves','06:00:00','14:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Jueves','14:00:00','22:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Jueves','22:00:00','06:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Jueves','8:00:00','16:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Viernes','06:00:00','14:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Viernes','14:00:00','22:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Viernes','22:00:00','06:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Viernes','8:00:00','16:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Sabado','06:00:00','14:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Sabado','14:00:00','22:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Sabado','22:00:00','06:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Domingo','06:00:00','14:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Domingo','14:00:00','22:00:00')
+INSERT INTO Horario(Dia,Hora_Inicio,Hora_Final) VALUES ('Domingo','22:00:00','06:00:00')
+
+INSERT INTO Categoria(Nombre,Precio_Cliente,Precio_Cuidador) VALUES('Adulto mayor',2000,1600)    
+INSERT INTO Categoria(Nombre,Precio_Cliente,Precio_Cuidador) VALUES('Niños',2000,1600)
+INSERT INTO Categoria(Nombre,Precio_Cliente,Precio_Cuidador) VALUES('Especiales',2500,200)
+INSERT INTO Categoria(Nombre,Precio_Cliente,Precio_Cuidador) VALUES('Terminales',3000,2400)
+
+
+INSERT INTO Servicio(FK_Categoria, Nombre) VALUES (1,'Cuido de adultos nocturno') --Una Jornada
+INSERT INTO Servicio(FK_Categoria, Nombre) VALUES (1,'Cuido de adultos diurno') --Una Jornada
+INSERT INTO Servicio(FK_Categoria, Nombre) VALUES (1,'Cuido de adultos por dias')
+INSERT INTO Servicio(FK_Categoria, Nombre) VALUES (1,'Cuido de adultos por horas')
+INSERT INTO Servicio(FK_Categoria, Nombre) VALUES (1,'Cuido de adultos por meses')
+INSERT INTO Servicio(FK_Categoria, Nombre) VALUES (2,'Cuido de niños nocturno')
+INSERT INTO Servicio(FK_Categoria, Nombre) VALUES (2,'Cuido de niños diurno')
+INSERT INTO Servicio(FK_Categoria, Nombre) VALUES (2,'Cuido de niños por horas')
+INSERT INTO Servicio(FK_Categoria, Nombre) VALUES (2,'Cuido de niños por dias')
+INSERT INTO Servicio(FK_Categoria, Nombre) VALUES (2,'Cuido de niños por Meses')
+INSERT INTO Servicio(FK_Categoria, Nombre) VALUES (3,'Cuido de especiales nocturno')
+INSERT INTO Servicio(FK_Categoria, Nombre) VALUES (3,'Cuido de especiales diurno')
+INSERT INTO Servicio(FK_Categoria, Nombre) VALUES (3,'Cuido de especiales por horas')
+INSERT INTO Servicio(FK_Categoria, Nombre) VALUES (3,'Cuido de especiales por dias')
+INSERT INTO Servicio(FK_Categoria, Nombre) VALUES (3,'Cuido de especiales por Meses')
+INSERT INTO Servicio(FK_Categoria, Nombre) VALUES (4,'Cuido de terminales nocturno')
+INSERT INTO Servicio(FK_Categoria, Nombre) VALUES (4,'Cuido de terminales diurno')
+INSERT INTO Servicio(FK_Categoria, Nombre) VALUES (4,'Cuido de terminales por horas')
+INSERT INTO Servicio(FK_Categoria, Nombre) VALUES (4,'Cuido de terminales por dias')
+
+--Centro de cuido San Jose , Cede Central.
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(1,1,2,'Marta Rodriguez Araya') --Kuidador 1///
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(1,1,2,'Edwin Martinez Fernandez')  --kuidador 2//
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(1,1,2 ,'Edith Mendez Perez')  --kuidador 3///
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(1,1,2, 'Hilda Carmona Chavez')  --kuidador 4//
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(1,2,1,'Wilson Siles Chaverry')
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(1,3,1 ,'Kenneth Cordero Castillo')
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(1,3,1 ,'Irene Porras Quiros')
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(1,4,3 , 'Martin Diaz Solis')
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(1,5,1 , 'Valeria Toruño Jimenez')
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(1,6,1 ,'Erick Salas Garita')
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(1,7,1, 'Lady Watson Taylor')--//Administrador//
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(1,8,1,'Adriana Mata Chavez')
+
+--Centro de cuido Linda Vista Alajuela.
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(2,1,2 , 'Vanessa López Mena')  --kuidador 13
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(2,1,2 , 'Jesus Mora Montero')  --kuidador 14
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(2,4,3 ,'Pedro Arias Garita')
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(2,8,1 ,'Jorge Calderon Ruiz')
+
+--Centro de cuido la Union Cartago.
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(3,1,2,'Iveth Rodriguez Mora')  --kuidador 17
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(3,1,2,'Eduardo Marin Lezcano')  --kuidador 18
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(3,1,2,'Rosa Camacho Venegas')  --kuidador 19
+
+--Centro de cuido Santa Cruz Guanacaste
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(4,1,2,'Henry Solis Angulo')  --kuidador 20 
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(4,1,2,'Marcos Lean Quintero')  --kuidador 21
+INSERT INTO Empleado(FK_Centro,FK_Puesto,FK_Tipo_Empleado,Nombre)VALUES(4,1,2,'Ana Ramirez Quesada')  --kuidador 22
+
+--Cuidador Nocturno
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(1,2)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(1,3)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(1,6)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(1,7)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(1,10)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(1,11)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(1,14)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(1,15)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(1,18)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(1,19)
+
+--Cuidador Nocturno Fines de semana.
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(2,22)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(2,23)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(2,25)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(2,26)
+
+--Cuidador Diurno
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(3,1)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(3,2)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(3,5)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(3,6)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(3,9)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(3,10)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(3,13)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(3,14)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(3,17)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(3,18)
+
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(4,21)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(4,22)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(4,24)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(4,25)
+
+--Adminsitrativos
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(5,4)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(5,8)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(5,12)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(5,16)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(5,20)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(6,4)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(6,8)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(6,12)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(6,16)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(6,20)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(7,4)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(7,8)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(7,12)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(7,16)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(7,20)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(8,4)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(8,8)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(8,12)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(8,16)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(8,20)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(9,4)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(9,8)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(9,12)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(9,16)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(9,20)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(10,4)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(10,8)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(10,12)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(10,16)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(10,20)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(11,4)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(11,8)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(11,12)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(11,16)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(11,20)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(12,4)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(12,8)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(12,12)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(12,16)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(12,20)
+
+
+--INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(13)
+--INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(14)
+--Administradores
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(15,4)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(15,8)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(15,12)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(15,16)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(15,20)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(16,4)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(16,8)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(16,12)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(16,16)
+INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(16,20)
+
+--INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(17)
+--INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(18)
+--INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(19)
+
+--INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(20)
+--INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(21)
+--INSERT INTO EmpleadoxHorario(FK_Empleado,FK_Horario)VALUES(22)
+
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(1,1)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(1,2)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(1,3)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(2,4)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(3,3)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(3,4)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(4,1)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(4,2)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(4,3)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(4,4)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(13,1)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(13,2)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(14,3)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(14,4)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(17,1)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(17,2)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(17,3)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(17,4)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(18,3)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(18,4)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(19,1)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(20,3)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(21,1)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(21,2)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(21,4)
+INSERT INTO EmpleadoxCategoria(FK_Empleado,FK_Categoria)VALUES(22,3)
+
+
+INSERT INTO Administrador(FK_Empleado,Tipo_Admin,Correo,Contraseña)VALUES(11,0,'Admin@admin.com','admin')
